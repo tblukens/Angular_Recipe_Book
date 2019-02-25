@@ -13,28 +13,25 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ParallaxDirective } from './shared/parallax.directive';
 import { ParallaxComponent } from './parallax/parallax.component';
+import { DropdownDirective } from './shared/dropdown.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      HeaderComponent,
-      RecipesComponent,
-      RecipeListComponent,
-      RecipeItemComponent,
-      RecipeDetailComponent,
-      ShoppingListComponent,
-      ShoppingEditComponent,
-      ParallaxDirective,
-      ParallaxComponent
-   ],
-   imports: [
-      BrowserModule,
-      FormsModule,
-      HttpClientModule
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ]
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
+    RecipeDetailComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    ParallaxDirective,
+    ParallaxComponent,
+    DropdownDirective
+  ],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
+  providers: [ShoppingListService],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
