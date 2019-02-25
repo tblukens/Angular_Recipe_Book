@@ -1,0 +1,14 @@
+li.list-group-item {
+  margin: 10px 0;
+}
+.bg-white {
+  margin: 0;
+  padding: 10px 15px;
+  background: #fff;
+}
+.test {
+  margin: 10px 0 0 0;
+}
+.boldmode {
+  font-weight: 900;
+}
